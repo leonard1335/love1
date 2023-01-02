@@ -15,40 +15,28 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>D-Day for love</title>
 	<link href="css/d-day.css" rel="stylesheet">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			corePlugins: {
+				preflight: false,
+			}
+		}
+	  </script>
+	
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js" integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-	<div class="container">
+	<div class="container max-w-sm">
 		<div class="day1">
 			<h3>觉恩 ❤️ 家盛</h3>
 			<p id="accent" class="accent"></p>
 			</div>
-			<div class="bar">our anniversary</div>
+			<div class="bar">纪念日</div>
 			<div class="day2">
-				<ul>
-					<li class="item-title">Day 100</li>
-					<li class="item-date" id="date100"></li>
-				</ul>
-				<ul>
-					<li class="item-title">Day 200</li>
-					<li class="item-date" id="date200"></li>
-				</ul>     
-				<ul>
-					<li class="item-title">Day 300</li>
-					<li class="item-date" id="date300"></li>
-				</ul>     
-				<ul>
-						<li class="item-title">1 Year</li>
-						<li class="item-date" id="date365"></li>
-					</ul>      
-				<ul>
-					<li class="item-title">Day 400</li>
-					<li class="item-date" id="date400"></li>
-				</ul>      									     
-				<ul>
-					<li class="item-title">Day 500</li>
-					<li class="item-date" id="date500"></li>
-				</ul>      									     
+				<ul role="list" class="p-0 m-0 overflow-y-scroll h-32" id="anniversary">
+				  </ul>   									     
 			</div>
 		</div>
 		<script src="js/dday.js"></script>
