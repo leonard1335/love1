@@ -24,6 +24,7 @@ if(days > 0)
     fullDay += days + '天';
 
 document.querySelector("#accent").innerHTML = fullDay;
+document.querySelector("#days").innerHTML = moment().diff(moment("2022-10-27"), 'days') + '天';
 
 var array = [
     {
